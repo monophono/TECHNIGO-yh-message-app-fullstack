@@ -11,8 +11,8 @@ SYSTEMFLÖDE - STRIDE/ESTRID
 +-----------------+                        |  +----------------------+           I          +--------------------------------------+             I                +----------------------+  |
                                            |                                 JSON-svar                                                      Svar med data                                   |
                                            --------------------------------------------------------------------------------------------------------------------------------------------------
-```
 Kommentar: I ursprunglig bild var det bara en enkel pil mellan Browser och Frontend. Därför har vi utgått från det.
+```
 
 Uppgift 1 — Identifierade hot & säkerhetsrisker
 -autentisering
