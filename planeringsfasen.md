@@ -1,19 +1,20 @@
 # Inlämning 1 - Planeringsfasen
 
 SYSTEMFLÖDE - STRIDE/ESTRID
+```text
                                            --------------------------------------------------------------------------------------------------------------------------------------------------
          O                                 |           1ES                       T                              3E                               T                          5E              |
-+-----------------+      TRD / Öppnar      |  +----------------------+      HTTP-anrop      +--------------------------------------+      Läser / sparar data     +----------------------+  |
++-----------------+      TRD / Öppnar      |  +----------------------+      HTTP-anrop      +--------------------------------------+     Läser / sparar data      +----------------------+  |
 |                 |                        |  |                      | -------------------> |                                      | -------------------------->  |                      |  |
 |     Browser     | ---------------------> |  |       Frontend       |                      |        Express / Backend & API       |                              |       Databas        |  |
 |                 |                        |  |                      | <------------------- |                                      | <--------------------------  |                      |  |
 +-----------------+                        |  +----------------------+           I          +--------------------------------------+             I                +----------------------+  |
-                                           |                                 JSON-svar                                                     Svar med data                                    |
+                                           |                                 JSON-svar                                                      Svar med data                                   |
                                            --------------------------------------------------------------------------------------------------------------------------------------------------
-
+```
+Kommentar: I ursprunglig bild var det bara en enkel pil mellan Browser och Frontend. Därför har vi utgått från det.
 
 Uppgift 1 — Identifierade hot & säkerhetsrisker
-
 -autentisering
 -behörighet
 -datainmatning
@@ -37,7 +38,6 @@ Uppgift 1 — Identifierade hot & säkerhetsrisker
     Risk: Belastning på systemet och försämrad användarupplevelse.
 
 Uppgift 2 — Säkerhetskrav i kravspecifikationen
-
 1. Systemet ska kräva autentisering med användarnamn och lösenord innan användaren får skapa, redigera eller ta bort meddelanden.
 2. Användare ska endast kunna redigera och ta bort sina egna meddelanden. Viktigt att detta även valideras i backend så att det inte bara tar bort “ändraknappen” i frontend.
 3. Lösenord ska lagras hashade (gärna med salting) och inte i klartext i databasen.
